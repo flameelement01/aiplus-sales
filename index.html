@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aiplus — Обучение стажёров</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header__inner">
+    <div class="logo">
+      <span class="logo-ai">Ai</span><span class="logo-plus">plus</span>
+    </div>
+    <div class="header-title">Портал обучения стажёров</div>
+  </div>
+</header>
+
+<!-- WELCOME SCREEN -->
+<section id="screen-welcome" class="screen active">
+  <div class="container welcome">
+    <div class="welcome__badge">Добро пожаловать</div>
+    <h1 class="welcome__title">Обучение стажёров<br><span class="highlight">Aiplus</span></h1>
+    <p class="welcome__text">
+      Пройди все 5 модулей плана адаптации и сдай финальный тест.<br>
+      Это займёт около 40–50 минут.
+    </p>
+    <div class="modules-preview">
+      <div class="module-chip" onclick="showScreen('screen-module1')">📘 День 1 · Компания Aiplus</div>
+      <div class="module-chip" onclick="showScreen('screen-module2')">🏫 День 1 · Продукт и школы</div>
+      <div class="module-chip" onclick="showScreen('screen-module3')">📞 День 2 · Скрипт звонка</div>
+      <div class="module-chip" onclick="showScreen('screen-module4')">💬 День 2 · Возражения</div>
+      <div class="module-chip" onclick="showScreen('screen-module5')">📊 День 2 · AmoCRM и метрики</div>
+      <div class="module-chip" onclick="showScreen('screen-form')">✅ Финальный тест</div>
+    </div>
+    <button class="btn btn-primary" onclick="showScreen('screen-form')">Начать обучение →</button>
+  </div>
+</section>
+
+<!-- FORM SCREEN -->
+<section id="screen-form" class="screen">
+  <div class="container form-screen">
+    <div class="form-card">
+      <h2>Введите ваши данные</h2>
+      <p class="form-desc">Эти данные будут сохранены вместе с результатами теста</p>
+      <div class="form-group">
+        <label>Имя *</label>
+        <input type="text" id="input-name" placeholder="Введите ваше имя" />
+      </div>
+      <div class="form-group">
+        <label>Фамилия *</label>
+        <input type="text" id="input-surname" placeholder="Введите вашу фамилию" />
+      </div>
+      <div class="form-group">
+        <label>Номер телефона *</label>
+        <input type="tel" id="input-phone" placeholder="+7 (___) ___-__-__" />
+      </div>
+      <div id="form-error" class="form-error" style="display:none">Пожалуйста, заполните все поля</div>
+      <button class="btn btn-primary" onclick="submitForm()">Продолжить →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== МОДУЛЬ 1: КОМПАНИЯ AIPLUS (ДЕНЬ 1 — УТРО) ===== -->
+<section id="screen-module1" class="screen">
+  <div class="container module-screen">
+    <div class="module-header">
+      <div class="module-day">День 1 · Утро</div>
+      <div class="module-number">Модуль 1</div>
+      <h2>Компания Aiplus</h2>
+    </div>
+    <div class="content-blocks">
+
+      <div class="content-card accent-blue">
+        <h3>Кто мы?</h3>
+        <p>Aiplus — образовательный центр, который изменил стандарты подготовки детей в Казахстане. Мы — первопроходцы современного образования.</p>
+        <p class="motto">«Не бывает глупых детей, просто они не обучались у лучших.»</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-num">10 лет</div>
+          <div class="stat-label">инноваций в образовании</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">5 000+</div>
+          <div class="stat-label">детей поступили в спецшколы</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">9</div>
+          <div class="stat-label">филиалов по Казахстану</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">каждый 4-й</div>
+          <div class="stat-label">наш ученик поступает в НИШ</div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>Мы были первыми в Казахстане</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-text"><strong>Отдел менторства</strong> — индивидуальное сопровождение каждого ученика</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-text"><strong>Айбаксы</strong> — внутренняя валюта мотивации учеников</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-text"><strong>Ранговая система</strong> — электронная база развития</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2019</div>
+            <div class="timeline-text"><strong>Поддержка на экзаменах</strong> — личное сопровождение на вступительных</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-text"><strong>Отдел методологии</strong> — 50 методистов, 4 000 авторских тестов</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>Структура занятия — каждая минута на вес золота</h3>
+        <p style="margin-bottom:16px; color:var(--text-light)">Каждое занятие длится <strong>60 минут</strong> и построено по единой системе:</p>
+        <div class="lesson-timeline">
+          <div class="lesson-step step-quiz">
+            <div class="step-time">7 мин</div>
+            <div class="step-name">QUIZ</div>
+            <div class="step-desc">Мини-тест по прошлой теме. Результаты сразу идут родителям в Telegram</div>
+          </div>
+          <div class="lesson-step step-repeat">
+            <div class="step-time">13 мин</div>
+            <div class="step-name">ПОВТОР</div>
+            <div class="step-desc">Разбор ошибок, закрепление материала, индивидуальная работа</div>
+          </div>
+          <div class="lesson-step step-new">
+            <div class="step-time">20 мин</div>
+            <div class="step-name">НОВАЯ ТЕМА</div>
+            <div class="step-desc">Пошаговое объяснение, практические примеры, вовлечение каждого</div>
+          </div>
+          <div class="lesson-step step-practice">
+            <div class="step-time">20 мин</div>
+            <div class="step-name">ПРАКТИКА</div>
+            <div class="step-desc">Самостоятельное решение, работа в микрогруппах, обратная связь</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>Система отбора преподавателей</h3>
+        <p style="margin-bottom:16px; color:var(--text-light)">Только <strong>2 из 10</strong> кандидатов становятся преподавателями Aiplus</p>
+        <div class="steps-list">
+          <div class="step-item">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <strong>Предметный тест</strong>
+              <p>Решает задачи уровня НИШ/РФМШ. 80% кандидатов отсеиваются здесь.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <strong>Собеседование с руководителем кафедры</strong>
+              <p>Умеет ли объяснять сложное простыми словами? Есть ли терпение и любовь к детям?</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <strong>Пробный урок с оценкой</strong>
+              <p>Ведёт реальный урок. Оценивают руководитель кафедры и методисты. Только после успеха — своя группа.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card accent-yellow">
+        <h3>Система мотивации учеников</h3>
+        <div class="ecosystem-grid">
+          <div class="eco-item">
+            <div class="eco-icon">💰</div>
+            <div class="eco-title">Айбаксы</div>
+            <div class="eco-desc">Внутренняя валюта. Зарабатывается за активность, ДЗ, прогресс. Меняется на призы.</div>
+          </div>
+          <div class="eco-item">
+            <div class="eco-icon">🏅</div>
+            <div class="eco-title">Ранговая система</div>
+            <div class="eco-desc">Электронная база развития. Ученики видят свой рост и рейтинг.</div>
+          </div>
+          <div class="eco-item">
+            <div class="eco-icon">📱</div>
+            <div class="eco-title">Онлайн-платформа</div>
+            <div class="eco-desc">5 000+ видеоуроков для 4–11 классов. Работает без интернета, доступ 24/7.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="module-nav">
+      <button class="btn btn-outline" onclick="showScreen('screen-form')">← Назад</button>
+      <button class="btn btn-primary" onclick="showScreen('screen-module2')">Модуль 2 →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== МОДУЛЬ 2: ПРОДУКТ И ШКОЛЫ (ДЕНЬ 1 — ДЕНЬ) ===== -->
+<section id="screen-module2" class="screen">
+  <div class="container module-screen">
+    <div class="module-header">
+      <div class="module-day">День 1 · День</div>
+      <div class="module-number">Модуль 2</div>
+      <h2>Продукт: программы и школы</h2>
+    </div>
+    <div class="content-blocks">
+
+      <div class="content-card accent-blue">
+        <h3>Наша целевая аудитория</h3>
+        <p>Родители, которые хотят дать ребёнку лучшее образование. Мы решаем 8 главных проблем, с которыми они приходят:</p>
+        <div class="problems-grid">
+          <div class="problem-item">
+            <span class="prob-icon">🤔</span>
+            <span>«Не знаем реальный уровень ребёнка» — школьная пятёрка ≠ готовность к НИШ</span>
+          </div>
+          <div class="problem-item">
+            <span class="prob-icon">⏰</span>
+            <span>«Откладываем на потом» — потом паника и нет времени</span>
+          </div>
+          <div class="problem-item">
+            <span class="prob-icon">💸</span>
+            <span>«Уже пробовали — не сработало» — репетиторы без системы</span>
+          </div>
+          <div class="problem-item">
+            <span class="prob-icon">🗺️</span>
+            <span>«Не знаем, с чего начать» — информационный хаос</span>
+          </div>
+          <div class="problem-item">
+            <span class="prob-icon">📚</span>
+            <span>«Школа не готовит к реальным экзаменам»</span>
+          </div>
+          <div class="problem-item">
+            <span class="prob-icon">😴</span>
+            <span>«Ребёнок не хочет заниматься» — нет мотивации</span>
+          </div>
+          <div class="problem-item">
+            <span class="prob-icon">⚖️</span>
+            <span>«Боимся перегрузить» — не знаем оптимальный ритм</span>
+          </div>
+          <div class="problem-item">
+            <span class="prob-icon">🤷</span>
+            <span>«Не уверены в правильности выбора»</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>Решение каждой проблемы</h3>
+        <div class="sol-table">
+          <div class="sol-row sol-header">
+            <span>Проблема</span>
+            <span>Решение Aiplus</span>
+          </div>
+          <div class="sol-row">
+            <span>Неуверенность в знаниях</span>
+            <span>Тестирование + персональный план</span>
+          </div>
+          <div class="sol-row">
+            <span>Откладывание</span>
+            <span>Чёткие сроки + система мотивации</span>
+          </div>
+          <div class="sol-row">
+            <span>Нет результата</span>
+            <span>Проверенная методология + контроль</span>
+          </div>
+          <div class="sol-row">
+            <span>Не знают с чего начать</span>
+            <span>Ментор составляет план от А до Я</span>
+          </div>
+          <div class="sol-row">
+            <span>Школа не готовит</span>
+            <span>Программы под формат экзаменов</span>
+          </div>
+          <div class="sol-row">
+            <span>Ребёнок не мотивирован</span>
+            <span>Айбаксы + ранговая система</span>
+          </div>
+          <div class="sol-row">
+            <span>Страх перегрузки</span>
+            <span>Ступенчатые группы А/B/C + адаптация темпа</span>
+          </div>
+          <div class="sol-row">
+            <span>Нужен контроль</span>
+            <span>Ежедневные отчёты + прозрачность</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>Ступенчатая система обучения</h3>
+        <div class="compare-grid">
+          <div class="compare-card compare-good">
+            <div class="compare-title">Группа A — Продвинутые</div>
+            <p>Опережают школьную программу, готовятся к более сложным задачам.</p>
+          </div>
+          <div class="compare-card compare-neutral">
+            <div class="compare-title">Группа B — Средний уровень</div>
+            <p>Укрепляем базу знаний, закрываем пробелы, выходим на стабильный результат.</p>
+          </div>
+          <div class="compare-card">
+            <div class="compare-title">Группа C — Начинающие</div>
+            <p>Комфортный темп, строим фундамент с нуля без давления.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card accent-blue">
+        <h3>Программы по направлениям</h3>
+        <div class="programs-grid">
+          <div class="program-card">
+            <div class="prog-grade">0–3 класс</div>
+            <div class="prog-name">Подготовка к школе</div>
+            <div class="prog-subjects">Математика · Грамота · Чтение · Английский · Логика</div>
+            <div class="prog-price">75 000 ₸/мес</div>
+          </div>
+          <div class="program-card">
+            <div class="prog-grade">4–6 класс</div>
+            <div class="prog-name">Поступление в спецшколы</div>
+            <div class="prog-subjects">НИШ · КТЛ · РФМШ · БИЛ</div>
+            <div class="prog-price">65–75 000 ₸/мес</div>
+          </div>
+          <div class="program-card">
+            <div class="prog-grade">7–9 класс</div>
+            <div class="prog-name">Повышение успеваемости</div>
+            <div class="prog-subjects">Алгебра · Геометрия · Физика · Английский</div>
+            <div class="prog-price">65–75 000 ₸/мес</div>
+          </div>
+          <div class="program-card program-ent">
+            <div class="prog-grade">10–11 класс</div>
+            <div class="prog-name">Подготовка к ЕНТ</div>
+            <div class="prog-subjects">6 раз в неделю + суббота онлайн (история КЗ + мат. грамотность)</div>
+            <div class="prog-price">75–85 000 ₸/мес</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>НИШ — Назарбаев Интеллектуальные Школы</h3>
+        <div class="school-detail-card school-nish">
+          <div class="sdc-header">
+            <span class="sdc-badge">21 школа · 18 городов</span>
+            <span class="sdc-badge sdc-shimkent">В Шымкенте: ФМН + ХБН</span>
+          </div>
+          <div class="sdc-facts">
+            <div class="sdc-fact">
+              <strong>Поступление</strong>
+              <span>В 7 класс (после 6 класса)</span>
+            </div>
+            <div class="sdc-fact">
+              <strong>Экзамен</strong>
+              <span>Конец марта, 2 дня, макс. 1500 баллов</span>
+            </div>
+            <div class="sdc-fact">
+              <strong>Конкуренция</strong>
+              <span>8–15 человек на 1 место</span>
+            </div>
+            <div class="sdc-fact">
+              <strong>Грантов всего</strong>
+              <span>2 664 места (в Шымкенте — 288)</span>
+            </div>
+          </div>
+          <div class="exam-structure">
+            <div class="exam-day">
+              <div class="exam-day-title">День 1 — Математика и науки</div>
+              <div class="exam-subjects">
+                <span>Математика — 40 зад. / 400 б.</span>
+                <span>Количественные хар-ки — 60 зад. / 300 б.</span>
+                <span>Естествознание — 20 зад. / 200 б.</span>
+              </div>
+            </div>
+            <div class="exam-day">
+              <div class="exam-day-title">День 2 — Языки</div>
+              <div class="exam-subjects">
+                <span>Казахский — 20 зад. / 200 б.</span>
+                <span>Русский — 20 зад. / 200 б.</span>
+                <span>Английский — 20 зад. / 200 б.</span>
+              </div>
+            </div>
+          </div>
+          <div class="shimkent-scores">
+            <div class="ss-title">Проходные баллы Шымкент (2025–2026):</div>
+            <div class="ss-row"><span>НИШ ФМН Шымкент</span><span>1 126 / 1500</span></div>
+            <div class="ss-row"><span>НИШ ХБН Шымкент</span><span>1 091 / 1500</span></div>
+          </div>
+          <div class="sdc-key-arg">💰 Государство выделяет 4,5 млн ₸/год на ученика НИШ → 27 млн ₸ за 6 лет. Подготовка в Aiplus окупается в десятки раз!</div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>БИЛ — Білім-инновация лицейлері</h3>
+        <div class="school-detail-card school-bil">
+          <div class="sdc-header">
+            <span class="sdc-badge">29 лицеев по всей стране</span>
+            <span class="sdc-badge sdc-shimkent">Есть в Шымкенте</span>
+          </div>
+          <div class="sdc-facts">
+            <div class="sdc-fact">
+              <strong>Поступление</strong>
+              <span>В 7 класс (после 6 класса)</span>
+            </div>
+            <div class="sdc-fact">
+              <strong>Экзамен</strong>
+              <span>Май, 1 тур, макс. 240 баллов</span>
+            </div>
+            <div class="sdc-fact">
+              <strong>Конкуренция</strong>
+              <span>5–10 человек на место</span>
+            </div>
+            <div class="sdc-fact">
+              <strong>Особенность</strong>
+              <span>Раздельное обучение М/Ж</span>
+            </div>
+          </div>
+          <div class="exam-structure">
+            <div class="exam-day">
+              <div class="exam-day-title">Экзамен (1 тур)</div>
+              <div class="exam-subjects">
+                <span>Математика и логика — 50 зад. / 200 б.</span>
+                <span>Грамотность чтения — 10 зад. / 40 б.</span>
+              </div>
+            </div>
+          </div>
+          <div class="sdc-key-arg">⚠️ Система штрафов: правильный ответ +4 б., неправильный −1 б. 4 ошибки «съедают» 1 правильный. Угадывать опасно!</div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>РФМШ — Республиканская Физико-Математическая Школа</h3>
+        <div class="school-detail-card school-rfmsh">
+          <div class="sdc-header">
+            <span class="sdc-badge">3 школы: Алматы · Астана · Уральск</span>
+            <span class="sdc-badge sdc-shimkent">Экзамен можно сдать в Шымкенте</span>
+          </div>
+          <div class="sdc-facts">
+            <div class="sdc-fact">
+              <strong>Поступление</strong>
+              <span>В 7 класс (грант) и 8 класс</span>
+            </div>
+            <div class="sdc-fact">
+              <strong>Экзамен</strong>
+              <span>Конец апреля, 30 зад., макс. 150 баллов</span>
+            </div>
+            <div class="sdc-fact">
+              <strong>Конкуренция</strong>
+              <span>3–7 на место (уровень олимпиадников)</span>
+            </div>
+            <div class="sdc-fact">
+              <strong>Важно</strong>
+              <span>Учиться в Алматы / Астане / Уральске</span>
+            </div>
+          </div>
+          <div class="exam-structure">
+            <div class="exam-day">
+              <div class="exam-day-title">Уровни заданий (7 класс)</div>
+              <div class="exam-subjects">
+                <span>Уровень А (базовый) — 10 зад. × 3 б. = 30 б.</span>
+                <span>Уровень В (средний) — 10 зад. × 5 б. = 50 б.</span>
+                <span>Уровень С (сложный) — 10 зад. × 7 б. = 70 б.</span>
+              </div>
+            </div>
+          </div>
+          <div class="shimkent-scores">
+            <div class="ss-title">Проходные баллы 2025:</div>
+            <div class="ss-row"><span>Астана</span><span>116–122 / 150</span></div>
+            <div class="ss-row"><span>Алматы</span><span>103–107 / 150</span></div>
+          </div>
+          <div class="sdc-key-arg">🏆 Самый высокий уровень математики в стране. Организатор Международной Жаутыковской олимпиады. Выпускники — призёры международных олимпиад.</div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>Сравнительная таблица: НИШ · БИЛ · РФМШ</h3>
+        <div class="compare-table">
+          <div class="ct-row ct-header">
+            <span>Критерий</span><span>НИШ</span><span>БИЛ</span><span>РФМШ</span>
+          </div>
+          <div class="ct-row">
+            <span>Кол-во школ</span><span>21</span><span>29</span><span>3</span>
+          </div>
+          <div class="ct-row">
+            <span>Поступление</span><span>7 класс</span><span>7 класс</span><span>1, 7, 8 класс</span>
+          </div>
+          <div class="ct-row">
+            <span>Макс. балл</span><span>1500</span><span>240</span><span>150</span>
+          </div>
+          <div class="ct-row">
+            <span>Конкуренция</span><span>8–15 чел/место</span><span>5–10 чел/место</span><span>3–7 чел/место</span>
+          </div>
+          <div class="ct-row">
+            <span>Экзамен (когда)</span><span>Март</span><span>Май</span><span>Апрель</span>
+          </div>
+          <div class="ct-row">
+            <span>Есть в Шымкенте?</span><span>✅ 2 школы</span><span>✅ Есть</span><span>📍 Экзамен — да</span>
+          </div>
+          <div class="ct-row">
+            <span>Обучение</span><span>Бесплатно (грант)</span><span>Бесплатно (грант)</span><span>Грант + платное</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card accent-yellow">
+        <h3>Когда какую школу рекомендовать</h3>
+        <div class="rec-grid">
+          <div class="rec-item">
+            <strong>Хочет «самое лучшее»</strong>
+            <span>→ НИШ — самая престижная, международная программа Cambridge + IB</span>
+          </div>
+          <div class="rec-item">
+            <strong>Сильный в математике</strong>
+            <span>→ РФМШ — если цель олимпиады и глубокая математика</span>
+          </div>
+          <div class="rec-item">
+            <strong>Важна дисциплина</strong>
+            <span>→ БИЛ — раздельное обучение, строгая дисциплина</span>
+          </div>
+          <div class="rec-item">
+            <strong>Не поступил в НИШ</strong>
+            <span>→ БИЛ (экзамен позже) или РФМШ — запасной план</span>
+          </div>
+          <div class="rec-item">
+            <strong>Младше 6 класса</strong>
+            <span>→ Начинать подготовку сейчас! Чем раньше — тем выше шансы</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>Персональный ментор — уникальная система</h3>
+        <p style="margin-bottom:16px; color:var(--text-light)">Единственный в Казахстане институт менторства. Миссия ментора — довести ребёнка до поступления в целевую школу.</p>
+        <div class="mentor-grid">
+          <div class="mentor-card">
+            <div class="mentor-icon">👦</div>
+            <div class="mentor-title">Для ребёнка</div>
+            <ul class="mentor-list">
+              <li>Старший друг, а не строгий учитель</li>
+              <li>Поддержка в трудные моменты</li>
+              <li>Наставник по жизни</li>
+            </ul>
+          </div>
+          <div class="mentor-card">
+            <div class="mentor-icon">📊</div>
+            <div class="mentor-title">Для результата</div>
+            <ul class="mentor-list">
+              <li>Координация всех преподавателей</li>
+              <li>Анализ прогресса по всем предметам</li>
+              <li>Корректировка программы</li>
+            </ul>
+          </div>
+          <div class="mentor-card">
+            <div class="mentor-icon">👪</div>
+            <div class="mentor-title">Для родителей</div>
+            <ul class="mentor-list">
+              <li>Единый контакт по всем вопросам</li>
+              <li>Еженедельные звонки с отчётами</li>
+              <li>Решение любых проблем одним звонком</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card accent-yellow">
+        <h3>Экономика: Aiplus vs альтернативы</h3>
+        <div class="cost-compare">
+          <div class="cost-card cost-bad">
+            <div class="cost-title">Хороший репетитор</div>
+            <div class="cost-price">7 000–8 000 ₸/урок</div>
+            <p>Только 1 предмет. Нужно 3–4 репетитора = 80–120 тыс ₸/мес. Нет общего плана.</p>
+            <div class="cost-result">Дорого, несистемно, результат на удачу</div>
+          </div>
+          <div class="cost-card cost-good">
+            <div class="cost-title">Aiplus</div>
+            <div class="cost-price">2 000–2 500 ₸/урок</div>
+            <p>Все предметы + ментор + материалы + психология развития в одном месте.</p>
+            <div class="cost-result">Гарантированный результат</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="module-nav">
+      <button class="btn btn-outline" onclick="showScreen('screen-module1')">← Модуль 1</button>
+      <button class="btn btn-primary" onclick="showScreen('screen-module3')">Модуль 3 →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== МОДУЛЬ 3: СКРИПТ ЗВОНКА (ДЕНЬ 2) ===== -->
+<section id="screen-module3" class="screen">
+  <div class="container module-screen">
+    <div class="module-header">
+      <div class="module-day">День 2</div>
+      <div class="module-number">Модуль 3</div>
+      <h2>Скрипт первичного звонка</h2>
+    </div>
+    <div class="content-blocks">
+
+      <div class="content-card accent-blue">
+        <h3>Структура звонка — 8 блоков</h3>
+        <p>Каждый блок обязателен. Нельзя пропускать этапы — это снижает конверсию.</p>
+        <div class="script-blocks-nav">
+          <span class="sbn-item">1. Приветствие</span>
+          <span class="sbn-arrow">→</span>
+          <span class="sbn-item">2. Квалификация</span>
+          <span class="sbn-arrow">→</span>
+          <span class="sbn-item">3. Программинг</span>
+          <span class="sbn-arrow">→</span>
+          <span class="sbn-item">4. Потребность</span>
+          <span class="sbn-arrow">→</span>
+          <span class="sbn-item">5. Резюме</span>
+          <span class="sbn-arrow">→</span>
+          <span class="sbn-item">6. Предложение</span>
+          <span class="sbn-arrow">→</span>
+          <span class="sbn-item">7. Закрытие</span>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="script-block">
+          <div class="sb-num">Блок 1</div>
+          <div class="sb-title">Приветствие и подтверждение заявки</div>
+          <div class="sb-text">
+            «Добрый день, <em>[имя клиента]</em>, меня зовут <em>[ваше имя]</em> из образовательного центра АЙПЛЮС. <strong>[Энергично и с улыбкой]</strong> Вы оставляли заявку на обучение вашего ребёнка, верно?»<br><br>
+            «Как мне к вам обращаться? <em>[После ответа]</em> <strong>[Имя]</strong>, приятно познакомиться!»
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="script-block">
+          <div class="sb-num">Блок 2</div>
+          <div class="sb-title">Квалификация — город, класс, бюджет</div>
+          <div class="sb-text">
+            <strong>Город:</strong> «<em>[Имя]</em>, скажите, пожалуйста, вы из Шымкента?»<br>
+            <em>Если «Нет»</em> → «Из какого вы города? У нас есть очный формат в Шымкенте и онлайн-обучение для других городов.»<br><br>
+            <strong>Класс:</strong> «В каком классе сейчас учится ваш ребёнок?»<br><br>
+            <strong>Бюджет:</strong> «Важный вопрос — обучение в нашем центре составляет:»
+            <div class="price-table">
+              <div class="pt-row"><span>0–1 классы</span><span>75 000 ₸/мес</span></div>
+              <div class="pt-row"><span>4–9 классы</span><span>65–75 000 ₸/мес</span></div>
+              <div class="pt-row"><span>Подготовка к ЕНТ</span><span>75–85 000 ₸/мес</span></div>
+            </div>
+            «Это комфортная для вас сумма, которую вы готовы инвестировать?»
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="script-block">
+          <div class="sb-num">Блок 3</div>
+          <div class="sb-title">Планы по началу обучения</div>
+          <div class="sb-text">
+            «<em>[Имя]</em>, скажите, когда вы планируете начать обучение?»<br>
+            <ul style="margin:8px 0 0 16px; color:var(--text)">
+              <li>В этом месяце?</li>
+              <li>Со следующего месяца?</li>
+              <li>Или рассматриваете более поздние сроки?</li>
+            </ul>
+            <br>«Отлично! Хочу вас обрадовать — сейчас как раз идёт набор, и у нас есть свободные места в группах.»
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="script-block">
+          <div class="sb-num">Блок 4</div>
+          <div class="sb-title">Выбор формата консультации</div>
+          <div class="sb-text">
+            «Я могу провести для вас полную консультацию по нашим программам. У нас есть два варианта:»
+            <div class="format-options">
+              <div class="format-opt">
+                <strong>Вариант 1 — Очная встреча</strong><br>
+                Приезжайте в наш филиал. Покажем классы, познакомим с преподавателями, обсудим подробно.
+              </div>
+              <div class="format-opt">
+                <strong>Вариант 2 — Телефонная консультация</strong><br>
+                10–15 минут по телефону — вы получите всю необходимую информацию прямо сейчас.
+              </div>
+            </div>
+            «Какой вариант вам удобнее?»
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="script-block">
+          <div class="sb-num">Блок 5</div>
+          <div class="sb-title">Выявление потребности</div>
+          <div class="sb-text">
+            «<em>[Имя]</em>, чтобы подобрать оптимальную программу, мне важно понять вашу ситуацию. С какой целью вы ищете дополнительное обучение?»
+            <div class="need-scenarios">
+              <div class="need-scenario">
+                <div class="ns-title">📈 Повышение успеваемости</div>
+                <ul>
+                  <li>По каким предметам нужно улучшить знания?</li>
+                  <li>Как это проявляется — в оценках, на контрольных?</li>
+                  <li>Как давно заметили эти трудности?</li>
+                  <li>Какой результат хотите видеть через 3 месяца?</li>
+                </ul>
+              </div>
+              <div class="need-scenario">
+                <div class="ns-title">🏫 Поступление в спецшколу</div>
+                <ul>
+                  <li>Какую конкретно школу рассматриваете — НИШ, КТЛ, РФМШ?</li>
+                  <li>В какой класс планируете поступать?</li>
+                  <li>Насколько ребёнок готов? Проходили пробное тестирование?</li>
+                  <li>По каким предметам нужна наиболее интенсивная подготовка?</li>
+                </ul>
+              </div>
+              <div class="need-scenario">
+                <div class="ns-title">📝 Подготовка к ЕНТ</div>
+                <ul>
+                  <li>Какие профильные предметы выбрали?</li>
+                  <li>В какой вуз планирует поступать?</li>
+                  <li>Сколько баллов нужно для гранта?</li>
+                  <li>Сколько баллов набирает сейчас на пробных тестах?</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="script-block">
+          <div class="sb-num">Блок 6</div>
+          <div class="sb-title">Резюмирование потребности</div>
+          <div class="sb-text">
+            «<em>[Имя]</em>, правильно ли я понял вашу ситуацию:»<br><br>
+            <em>[Конкретно называем 2–3 проблемы и цели, которые озвучил клиент]</em><br><br>
+            «Всё верно? Что-то упустил?»<br><br>
+            <div class="tip-box">💡 Дайте клиенту подтвердить или дополнить. Это создаёт ощущение, что вы слушали и понимаете ситуацию.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="script-block">
+          <div class="sb-num">Блок 7</div>
+          <div class="sb-title">Предложение — закрытие на встречу</div>
+          <div class="sb-text">
+            «Отлично, <em>[Имя]</em>! Исходя из того, что вы рассказали, наш центр точно сможет помочь вашему ребёнку. Хочу вас пригласить на очную консультацию в наш центр.»<br><br>
+            «На встрече мы:»
+            <ul style="margin:8px 0 0 16px">
+              <li>Проведём диагностику уровня знаний ребёнка</li>
+              <li>Подберём оптимальную программу и группу</li>
+              <li>Составим индивидуальный план подготовки</li>
+              <li>Ответим на все ваши вопросы</li>
+            </ul>
+            <br>«Когда вам удобнее подъехать — сегодня или завтра?»
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="script-block">
+          <div class="sb-num">Блок 8</div>
+          <div class="sb-title">Закрытие на запись</div>
+          <div class="sb-text">
+            «На <em>[выбранный день]</em> у нас есть время в <em>[время 1]</em> или <em>[время 2]</em>. Какое вам больше подходит?»<br><br>
+            «Прекрасно! Для записи подскажите:»
+            <ul style="margin:8px 0 0 16px">
+              <li>Фамилия и имя вашего ребёнка?</li>
+              <li>На каком отделении учится — казахском или русском?</li>
+            </ul>
+            <br>«<em>[Имя]</em>, мы записали вас на <em>[день, дата, время]</em>. Пожалуйста, приходите с ребёнком. Сейчас отправлю всю информацию в WhatsApp.»<br><br>
+            <div class="tip-box">⚠️ Важно завершить фразой: «<em>[Имя]</em>, вы точно придёте? Я резервирую за вами это время — другие клиенты не смогут записаться на этот слот. Могу на вас рассчитывать?»</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card accent-yellow">
+        <h3>Незаключённый звонок — касания по дням</h3>
+        <p style="margin-bottom:12px; color:var(--text-light)">Если клиент не взял трубку или не записался — продолжаем работу:</p>
+        <div class="touch-days">
+          <div class="touch-day">
+            <strong>День 1</strong>
+            <p>«Здравствуйте, <em>[имя]</em>! Меня зовут <em>[имя]</em>, АЙПЛЮС. Не смог до вас дозвониться — хотел обсудить возможности для вашего ребёнка. Из какого вы города?»</p>
+          </div>
+          <div class="touch-day">
+            <strong>День 2</strong>
+            <p>«Здравствуйте, <em>[имя]</em>! Вы оставляли заявку, но не отвечаете. Скажите, качественное образование для вашего ребёнка ещё актуально?»</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="module-nav">
+      <button class="btn btn-outline" onclick="showScreen('screen-module2')">← Модуль 2</button>
+      <button class="btn btn-primary" onclick="showScreen('screen-module4')">Модуль 4 →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== МОДУЛЬ 4: РАБОТА С ВОЗРАЖЕНИЯМИ (ДЕНЬ 2) ===== -->
+<section id="screen-module4" class="screen">
+  <div class="container module-screen">
+    <div class="module-header">
+      <div class="module-day">День 2</div>
+      <div class="module-number">Модуль 4</div>
+      <h2>Работа с возражениями</h2>
+    </div>
+    <div class="content-blocks">
+
+      <div class="content-card accent-blue">
+        <h3>Главное правило</h3>
+        <p>Возражение — это не отказ. Это запрос на дополнительную информацию. Задача — выслушать, согласиться, и предложить решение.</p>
+        <p style="margin-top:12px"><strong>Алгоритм:</strong> Принять → Прояснить → Ответить → Закрыть</p>
+      </div>
+
+      <div class="content-card">
+        <div class="objection-block">
+          <div class="obj-title">💸 «Дорого»</div>
+          <div class="obj-variants">
+            <div class="obj-variant">
+              <strong>Сравнение с репетитором:</strong>
+              <p>«Репетитор индивидуально — 5 000–7 000 ₸/занятие. При 8 занятиях в месяц по одному предмету — 40–56 тыс ₸. У нас же ребёнок занимается по нескольким предметам с системным подходом и платит <em>[сумма]</em>.»</p>
+            </div>
+            <div class="obj-variant">
+              <strong>Инвестиция в будущее:</strong>
+              <p>«Если ребёнок поступит в НИШ, государство выделяет 4,5 млн ₸ в год. За 6 лет — 27 млн ₸. Это окупается многократно.»</p>
+            </div>
+            <div class="obj-variant">
+              <strong>Рассрочка:</strong>
+              <p>«У нас есть беспроцентная рассрочка через Kaspi на 3–6 месяцев. Ежемесячный платёж станет намного комфортнее.»</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="objection-block">
+          <div class="obj-title">🤔 «Надо подумать»</div>
+          <div class="obj-text">
+            «Конечно, понимаю. Скажите, что конкретно вас смущает? Может, я смогу прояснить?»<br><br>
+            <em>[Выслушиваем и отрабатываем конкретную причину]</em><br><br>
+            Если не озвучивает причину:<br>
+            «<em>[Имя]</em>, понимаю, что решение важное. Но обратите внимание:
+            <ul style="margin:8px 0 0 16px">
+              <li>Сейчас идёт набор — свободные места заканчиваются</li>
+              <li>Чем раньше начнёте — тем больше времени на подготовку</li>
+              <li>До экзаменов осталось <em>[время]</em>, каждый месяц на счету</li>
+            </ul>
+            Давайте зафиксируем место, а вы подумаете до <em>[завтра]</em>. Если передумаете — просто дайте знать. Договорились?»
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="objection-block">
+          <div class="obj-title">👫 «Нужно посоветоваться с мужем/женой»</div>
+          <div class="obj-text">
+            «Абсолютно понимаю — такие решения нужно принимать вместе.»<br><br>
+            «Давайте так: я зафиксирую за вами место. Вы обсудите, а если решите записаться — приезжайте. Если нет — просто позвоните и отмените, никаких проблем.»<br><br>
+            «Важный момент: свободные места заканчиваются быстро. Если не зафиксируем сейчас — через день может не быть мест в удобное время.»<br><br>
+            «Давайте забронируем? Когда удобнее — сегодня или завтра?»
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="objection-block">
+          <div class="obj-title">📚 «Есть репетитор»</div>
+          <div class="obj-text">
+            «Отлично, что занимаетесь дополнительно! Скажите, довольны результатами?»<br><br>
+            <em>Если доволен:</em> «У репетитора один предмет. Наша программа охватывает всё необходимое системно. Многие наши ученики совмещают.»<br><br>
+            <em>Если не доволен:</em><br>
+            «У репетиторов часто нет системы и чёткого плана. У нас:
+            <ul style="margin:8px 0 0 16px">
+              <li>Структурированная программа по всем темам</li>
+              <li>Регулярное тестирование с видимым прогрессом</li>
+              <li>Опыт подготовки тысяч учеников</li>
+              <li>Группа — ребёнок учится быстрее в коллективе</li>
+            </ul>
+            Давайте попробуете месяц и сравните результаты?»
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="objection-block">
+          <div class="obj-title">😴 «Ребёнок не хочет / устаёт / перегружен»</div>
+          <div class="obj-text">
+            «Понимаю ваше беспокойство. Скажите, ребёнок знает, зачем ему нужна подготовка?»<br><br>
+            «У нас есть несколько преимуществ:
+            <ul style="margin:8px 0 0 16px">
+              <li>Интересная подача — преподаватели умеют увлечь предметом</li>
+              <li>Маленькие группы — уделяем внимание каждому</li>
+              <li>Видимый результат — когда ребёнок видит, что получается, мотивация растёт</li>
+              <li>Айбаксы — система баллов, которая делает обучение игрой</li>
+            </ul>
+            Предлагаю: приведите ребёнка на первое <strong>пробное занятие</strong>. Пусть посмотрит, познакомится с преподавателем. Если не понравится — не будем настаивать. Как вам?»
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <div class="objection-block">
+          <div class="obj-title">⏳ «Сейчас не актуально / Начнём позже»</div>
+          <div class="obj-text">
+            «Понимаю. Можете уточнить, почему именно сейчас не актуально?»<br><br>
+            <em>Если лето/каникулы:</em><br>
+            «На самом деле, это лучшее время для старта! Меньше школьной нагрузки — ребёнок не перегружен. К началу учебного года уже в ритме. Группы сейчас комплектуются — потом сложнее попасть.»<br><br>
+            <em>Если финансы:</em><br>
+            «Есть рассрочка через Kaspi на комфортных условиях. Начните сейчас — каждый месяц без подготовки снижает шансы.»
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card accent-yellow">
+        <h3>Финальные фразы после подтверждения встречи</h3>
+        <div class="final-phrases">
+          <div class="final-phrase">
+            <strong>После записи:</strong>
+            <p>«<em>[Имя]</em>, очень рад, что сможем помочь вашему ребёнку! Уверен, вы увидите результат уже в первые месяцы. Отправляю детали в WhatsApp. Если возникнут вопросы — звоните в любое время. До встречи!»</p>
+          </div>
+          <div class="final-phrase">
+            <strong>Если не удалось закрыть:</strong>
+            <p>«<em>[Имя]</em>, спасибо за уделённое время! Отправляю информацию о наших программах в WhatsApp. Подумайте, и если появятся вопросы — звоните напрямую по этому номеру. Хорошего дня!»</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="module-nav">
+      <button class="btn btn-outline" onclick="showScreen('screen-module3')">← Модуль 3</button>
+      <button class="btn btn-primary" onclick="showScreen('screen-module5')">Модуль 5 →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== МОДУЛЬ 5: AMOCRM И СТАНДАРТЫ (ДЕНЬ 2) ===== -->
+<section id="screen-module5" class="screen">
+  <div class="container module-screen">
+    <div class="module-header">
+      <div class="module-day">День 2</div>
+      <div class="module-number">Модуль 5</div>
+      <h2>AmoCRM и стандарты работы</h2>
+    </div>
+    <div class="content-blocks">
+
+      <div class="content-card accent-blue">
+        <h3>AmoCRM — основной рабочий инструмент</h3>
+        <p>Все клиенты, звонки, задачи и сделки ведутся в AmoCRM. Работа без CRM не считается.</p>
+        <div class="crm-stages">
+          <div class="crm-stage">Новая заявка</div>
+          <div class="crm-arrow">→</div>
+          <div class="crm-stage">Квалификация</div>
+          <div class="crm-arrow">→</div>
+          <div class="crm-stage">Встреча назначена</div>
+          <div class="crm-arrow">→</div>
+          <div class="crm-stage">Встреча состоялась</div>
+          <div class="crm-arrow">→</div>
+          <div class="crm-stage">Предоплата</div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>Ежедневный чеклист менеджера</h3>
+        <div class="checklist">
+          <div class="check-item"><span class="check-time">09:30</span><span>Напоминание о встречах на сегодня — отправить подготовленное сообщение клиенту (шаблон в CRM)</span></div>
+          <div class="check-item"><span class="check-time">10:00</span><span>Обзвон первичных заявок + проверка новых лидов из Telegram-группы отдела продаж</span></div>
+          <div class="check-item"><span class="check-time">Весь день</span><span>После первичных заявок — переходим к своему разделу «Ответственный назначен». Фильтруй по этому этапу и звони.</span></div>
+          <div class="check-item"><span class="check-time">16:00–18:00</span><span>Напоминание завтрашних встреч. Если не дозвонился — отправь сообщение (шаблон в CRM)</span></div>
+          <div class="check-item"><span class="check-time">Конец дня</span><span>Проверь: все заявки обработаны, входящие закрыты, нет сделок без задач, все задачи на сегодня выполнены</span></div>
+        </div>
+      </div>
+
+      <div class="content-card accent-yellow">
+        <h3>Ключевые метрики стажёра</h3>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-num">80–100</div>
+            <div class="metric-label">звонков в день</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">10–15</div>
+            <div class="metric-label">содержательных разговоров в день</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">2–3</div>
+            <div class="metric-label">записи на консультацию в день</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">≥1</div>
+            <div class="metric-label">состоявшаяся консультация за 3 дня</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">90 мин</div>
+            <div class="metric-label">чистое время разговоров в день</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>Правила работы в отделе продаж</h3>
+        <div class="rules-list">
+          <div class="rule-item">
+            <div class="rule-num">1</div>
+            <div class="rule-text">Если менеджер не ответил клиенту в течение <strong>15 минут</strong> — любой другой менеджер может взять этот лид.</div>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">2</div>
+            <div class="rule-text">Каждый лид из Telegram-группы нужно принять в течение <strong>15 минут</strong> и сразу добавить в CRM.</div>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">3</div>
+            <div class="rule-text">Обязательное время разговоров — <strong>90 минут в день</strong>. Автоботы и фиктивные звонки запрещены.</div>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">4</div>
+            <div class="rule-text">Нельзя уйти раньше 17:00, пока не выполнена норма минут, нет незакрытых заявок и задач.</div>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">5</div>
+            <div class="rule-text">Лид закрывается на <strong>9-й день</strong> с момента поступления, если нет прогресса.</div>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">6</div>
+            <div class="rule-text">Сделки без задач <strong>запрещены</strong>. На каждой сделке должна быть поставлена следующая задача.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3>Карьерный путь: стажёр → менеджер</h3>
+        <div class="career-path">
+          <div class="career-stage cs-intern">
+            <div class="cs-title">Стажёр</div>
+            <div class="cs-desc">5 дней обучения, первые звонки под наблюдением наставника</div>
+            <div class="cs-condition">Цель: первая состоявшаяся консультация</div>
+          </div>
+          <div class="career-arrow">↓</div>
+          <div class="career-stage cs-probation">
+            <div class="cs-title">Интерн</div>
+            <div class="cs-desc">Оформление в штат, минимальный план продаж, доступ к входящим лидам</div>
+            <div class="cs-condition">Условие: первая консультация состоялась</div>
+          </div>
+          <div class="career-arrow">↓</div>
+          <div class="career-stage cs-manager">
+            <div class="cs-title">Менеджер</div>
+            <div class="cs-desc">Доступ к тёплым лидам, стандартный план, полный функционал</div>
+            <div class="cs-condition">Условие: выполнил план интерна</div>
+          </div>
+        </div>
+        <div class="tip-box" style="margin-top:16px">⚠️ Если план интерна не выполнен — повторная стажировка или завершение сотрудничества.</div>
+      </div>
+
+      <div class="content-card">
+        <h3>Роли команды в поддержке стажёра</h3>
+        <div class="team-roles">
+          <div class="team-role">
+            <strong>Тимлид</strong>
+            <p>Утренние и вечерние планёрки, разбор звонков, помощь с возражениями, мотивация</p>
+          </div>
+          <div class="team-role">
+            <strong>Наставник</strong>
+            <p>Рядом первые 5 дней, разбор каждого звонка, помощь в реальном времени</p>
+          </div>
+          <div class="team-role">
+            <strong>HR</strong>
+            <p>Контроль настроения, вовлечение в команду, решение бытовых вопросов</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="module-nav">
+      <button class="btn btn-outline" onclick="showScreen('screen-module4')">← Модуль 4</button>
+      <button class="btn btn-primary" onclick="showScreen('screen-test')">Пройти тест →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEST SCREEN ===== -->
+<section id="screen-test" class="screen">
+  <div class="container test-screen">
+    <div class="test-header">
+      <h2>Финальный тест</h2>
+      <p>Ответьте на 23 вопроса по всем модулям. Для прохождения нужно набрать 70%.</p>
+    </div>
+    <div class="test-progress-bar">
+      <div id="progress-fill" class="test-progress-fill" style="width:5%"></div>
+    </div>
+    <div id="progress-text" class="test-progress-text">Вопрос 1 из 23</div>
+    <div id="test-container"></div>
+    <div id="test-error" class="test-error" style="display:none">Пожалуйста, выберите ответ перед продолжением</div>
+    <div class="test-nav">
+      <button id="btn-prev" class="btn btn-outline" onclick="prevQuestion()" style="display:none">← Назад</button>
+      <button id="btn-next" class="btn btn-primary" onclick="nextQuestion()" style="display:none">Далее →</button>
+      <button id="btn-submit" class="btn btn-primary" onclick="submitTest()" style="display:none">Завершить тест ✓</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESULT SCREEN ===== -->
+<section id="screen-result" class="screen">
+  <div class="container result-screen">
+    <div class="result-card">
+      <div id="result-icon" class="result-icon"></div>
+      <h2 id="result-title"></h2>
+      <div id="result-score" class="result-score"></div>
+      <p id="result-text" class="result-text"></p>
+      <div id="result-details" class="result-details"></div>
+      <div id="saving-status" class="saving-status">Сохраняем результаты...</div>
+      <button class="btn btn-outline" onclick="showScreen('screen-welcome')" style="margin-top:24px">Вернуться в начало</button>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
